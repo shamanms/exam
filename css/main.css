@@ -1,0 +1,197 @@
+html {
+    font-size: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+img {
+    max-width: 100%;
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+body {
+    background-color: rgb(243, 243, 243);
+}
+.active{
+    background-color: rgb(100, 151, 146)!important;
+}
+/*= containers*/
+header,
+.main,
+footer {
+    max-width: 1170px;
+    margin: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+/*containers*/
+
+/*=heder*/
+header {    
+    margin-top: 4rem;
+}
+.header-menu {
+    font-size: 0;
+}
+.header-menu li {
+    list-style: none;
+    display: inline-block;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    margin: 0 2rem 1rem 0;
+    text-align: center;
+    padding: 0.5rem 1.5rem 0.5rem 1.1rem;
+    background-color: rgb(152, 163, 163);
+    border-radius: 0.5rem;
+    border-bottom: 0.3rem solid rgb(127, 140, 140);
+    cursor: pointer;
+}
+.header-menu li a {
+    text-decoration: none;
+    color: #fff;
+}
+.header-menu li:hover {
+    background-color: rgb(232, 100, 90);
+    border-bottom-color: rgb(226, 83, 75);
+}
+/*header*/
+
+/*=main*/
+.content {
+    margin: 2.8rem auto 1rem;
+    
+}
+.card {
+    max-width: 57rem;
+    margin:0 auto 3.7rem;
+    position: relative;
+    cursor: pointer;
+}
+@media (min-width: 640px) {
+    .card {
+        float: left;
+        max-width: 48.7%;
+    }
+    .card:nth-child(odd) {
+        margin-right: 2.5%;
+    }
+}
+.card>img {
+    box-shadow: 0 0.5rem rgba(229, 230, 230, 0.9);
+    border-radius: 0.5rem;
+}
+.eye {
+    background: rgb(118, 183, 177) url(../img/eye.png) no-repeat 0.5rem 1.2rem;
+    border-radius: 0.5rem;
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    top: 40%;
+    left: 42%;
+    display: none;
+}
+.share{
+    background: rgb(118, 183, 177) url(../img/share.png) no-repeat 0.4rem 0.7rem;
+    border-radius: 0.5rem;
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    top: 40%;
+    left: 50.5%;
+    display: none;
+}
+.card p {
+    position: absolute;
+    bottom: 5%;
+    left: 40%;
+    font-size: 1.6rem;
+    display: none;
+    color: #fff;
+}
+@media (min-width: 1060px) {
+    
+}
+.card:hover a,
+.card:hover p{
+    display: block;
+}
+.card:hover:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(118,199,192,0.9);
+    border-radius: 0.5rem;
+    position: absolute;
+}
+.eye:hover,
+.share:hover {
+    background-color: rgb(226, 83, 75);
+}
+/*main*/
+
+/*=footer*/
+.paginator {
+    /*max-width: 50%;*
+    margin: auto;*/
+    padding: 0;
+    display: inline-block;
+    text-align: center;
+}
+.paginator li{
+    list-style: none;
+    display: inline-block;
+    margin-bottom: 2.5rem;
+}
+.paginator ul {
+    -webkit-padding-start: 0;
+}
+.paginator-btn {
+    font-size: 1.6rem;
+    padding: 0.8rem 1.5rem;
+    border-radius: 0.5rem;
+    background-color: rgb(140,152,152);
+    margin: 0 0.4rem;
+    text-decoration: none;
+    color: rgb(225,225,225);
+    border-bottom: 0.3rem solid rgb(127,140,140);
+}
+.prev {
+    padding: 0.8rem 2rem;
+    position: relative;
+}
+.prev:before {
+    content:'';
+    background: rgba(1, 1, 1, 0.1) url(../img/arrow.png) no-repeat;
+    width: 1.2rem;
+    height: 1.7rem;
+    top: 1.2rem;
+    left: 1.2rem;
+    position: absolute;
+    transform: rotate(180deg);
+}
+.next {
+    padding: 0.8rem 2rem;
+    position: relative;
+}
+.next:before {
+    content:'';
+    background: rgba(1, 1, 1, 0.1) url(../img/arrow.png) no-repeat;
+    width: 1.2rem;
+    height: 1.7rem;
+    top: 1.2rem;
+    left: 1.5rem;
+    position: absolute
+}
+.paginator a:hover {
+    background-color: rgb(232, 100, 90);
+    border-bottom-color: rgb(226, 83, 75);
+}
+footer {
+    padding-bottom: 4.8rem;
+    padding-top: 1.7rem;
+}
+/*footer*/
