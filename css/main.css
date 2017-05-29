@@ -36,6 +36,7 @@ header {
 }
 .header-menu {
     font-size: 0;
+        -webkit-padding-start: 0;
 }
 .header-menu li {
     list-style: none;
@@ -95,7 +96,7 @@ header {
     display: none;
     }
 .share{
-    background: rgb(118, 183, 177) url(../img/share.png) no-repeat 0.6rem 0.7rem;
+    background: rgb(118, 183, 177) url(../img/share.png) no-repeat 0.7rem 0.7rem;
     border-radius: 0.5rem;
     width: 4rem;
     height: 4rem;
@@ -189,7 +190,7 @@ header {
 }
 .paginator-btn {
     font-size: 1.6rem;
-    padding: 0.8rem 1.5rem;
+    padding: 0.8rem 1.3rem;
     border-radius: 0.5rem;
     background-color: rgb(140,152,152);
     margin: 0 0.4rem;
@@ -200,6 +201,8 @@ header {
 .prev {
     padding: 0.8rem 2rem;
     position: relative;
+    margin-left: 0;
+    margin-right: 2rem;
 }
 .prev:before {
     content:'';
@@ -207,13 +210,15 @@ header {
     width: 1.2rem;
     height: 1.7rem;
     top: 1.2rem;
-    left: 1.2rem;
+    left: 1.1rem;
     position: absolute;
     transform: rotate(180deg);
 }
 .next {
     padding: 0.8rem 2rem;
     position: relative;
+    margin-left: 2rem;
+    margin-right: 0;
 }
 .next:before {
     content:'';
@@ -221,7 +226,7 @@ header {
     width: 1.2rem;
     height: 1.7rem;
     top: 1.2rem;
-    left: 1.5rem;
+    left: 1.2rem;
     position: absolute
 }
 .paginator a:hover {
