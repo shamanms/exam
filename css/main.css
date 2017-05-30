@@ -16,8 +16,10 @@ h1, h2, h3, h4, h5, h6 {
 body {
     background-color: rgb(243, 243, 243);
 }
-.active{
-    background-color: rgb(100, 151, 146)!important;
+.active,
+.header-menu .active,
+.paginator .active {
+    background-color: rgb(100, 151, 146);
 }
 /*= containers*/
 header,
@@ -86,7 +88,7 @@ header {
     border-radius: 0.5rem;
 }
 .eye {
-    background: rgb(118, 183, 177) url(../img/eye.png) no-repeat 0.5rem 1.2rem;
+    background: rgba(100, 151, 146,.5) url(../img/eye.png) no-repeat 0.5rem 1.2rem;
     border-radius: 0.5rem;
     width: 4rem;
     height: 4rem;
@@ -96,7 +98,7 @@ header {
     display: none;
     }
 .share{
-    background: rgb(118, 183, 177) url(../img/share.png) no-repeat 0.7rem 0.7rem;
+    background: rgba(100, 151, 146,.5) url(../img/share.png) no-repeat 0.7rem 0.7rem;
     border-radius: 0.5rem;
     width: 4rem;
     height: 4rem;
